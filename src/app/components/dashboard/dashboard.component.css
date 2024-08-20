@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+header {
+    background-color: #ffffff;
+    color: #f3a245;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para la barra de encabezado */
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    margin-right: 10px;
+}
+.search-bar {
+    flex-grow: 1;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+}
+.search-bar input {
+    width: 50%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 20px;
+    border: 1px solid #bdc3c7;
+    box-sizing: border-box;
+}
+.user-options img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+.main-container {
+    display: flex;
+    margin-top: 70px;
+    padding: 20px 0;
+}
+.sidebar {
+    width: 20%;
+    background-color: #e0edf0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sidebar h2 {
+    text-align: center;
+    color: #0e2e49;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sidebar .category-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    background-color: #39546e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    color: #2e5174;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.book {
+    background-color: #ffffff;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.book img {
+    max-width: 100%;
+    height: auto;
+}
+.book-title {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+.sort-options {
+    background-color: transparent; 
+    color: #2e5174;
+    display: inline-block; 
+    padding: 5px 10px;
+    border: 1px solid #2e5174; 
+    border-radius: 5px; 
+}
+
+select {
+    border: none; 
+    background-color: transparent ; 
+    color: inherit;
+    font-size: inherit; 
+    padding: 0;
+    appearance: none; 
+}
+select:focus {
+    outline: none;
+    border: 1px solid #2e5174;
+}
+.user-options {
+position: relative;
+display: inline-block;
+}
+
+.user-menu {
+position: absolute;
+top: 100%;
+left: 0;
+background-color: white;
+border: 1px solid black;
+border-radius: 5px;
+padding: 10px;
+display: none;
+}
+
+.user-menu ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.user-menu li {
+margin-bottom: 10px;
+}
+
+.user-menu a {
+color: black;
+text-decoration: none;
+}
+
+.user-options .user-menu-trigger {
+background: none;
+border: none;
+padding: 0;
+cursor: pointer;
+}
+
+.user-options .user-menu-trigger img {
+width: 40px;
+height: auto;
+}
+
+.user-options:hover .user-menu {
+display: block;
+}
